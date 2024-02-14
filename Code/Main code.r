@@ -231,7 +231,6 @@ print(CalibParms)
 CalibOutData <- data.frame(ode(y = InitStocks, times = trange, func = DataMod, parms = CalibParms, method = 'euler'))
 
 
-
 #### Water Balance Model in Minute Spec ####
 InitStocks <- c(
   EQ1 = 1000,
