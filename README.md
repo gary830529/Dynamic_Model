@@ -13,6 +13,12 @@ This component of the project focuses on the adsorption of ammonium by zeoliteâ€
 ### Calibration Using Real Field Trial Data
 The models have been rigorously calibrated using real field data collected from operational trials of the NG. This calibration process ensures that the models accurately represent the system's behavior under various conditions, thereby enhancing their predictive reliability and validity.
 
+### Usage
+The repository is structured to facilitate ease of use and adaptability:
+
+Source Code: Contains all R scripts developed for the system dynamic models, including water balance and nitrogen adsorption models.
+Data: Includes datasets from real field trials used for model calibration.
+
 ## Citation
 If you utilize this model or the findings from this project in your research, please cite this repository as follows:
 
