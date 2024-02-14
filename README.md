@@ -1,4 +1,4 @@
-# System Dynamic Model for NEWgenerator<sup>TM</sup>
+# System Dynamic Model in R for NEWgenerator<sup>TM</sup>
 
 ## Overview
 This repository hosts the R code for the development of a comprehensive system dynamic model tailored for an onsite wastewater treatment system named NEWgenerator<sup>TM</sup> (NG). The core objective of this project is to simulate and analyze the dynamics of water balance and nitrogen adsorption, specifically focusing on the adsorption of ammonium by zeolite. Moreover, the project involves the meticulous calibration of these models using real field trial data to ensure accuracy and reliability.
