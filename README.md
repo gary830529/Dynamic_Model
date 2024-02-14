@@ -1,4 +1,4 @@
-# System Dynamic Model for NEWgenerator<sup>TM</sup>
+# System Dynamic Model in R for NEWgenerator<sup>TM</sup>
 
 ## Overview
 This repository hosts the R code for the development of a comprehensive system dynamic model tailored for an onsite wastewater treatment system named NEWgenerator<sup>TM</sup> (NG). The core objective of this project is to simulate and analyze the dynamics of water balance and nitrogen adsorption, specifically focusing on the adsorption of ammonium by zeolite. Moreover, the project involves the meticulous calibration of these models using real field trial data to ensure accuracy and reliability.
@@ -23,5 +23,3 @@ Data: Includes datasets from real field trials used for model calibration.
 If you utilize this model or the findings from this project in your research, please cite this repository as follows:
 
 Shyu, H.-Y., Bair, R. A., Castro, C. J., Xaba, L., Delgado-Navarro, M., Sindall, R., Cottingham, R., Uman, A. E., Buckley, C. A., & Yeh, D. H. (2021). The NEWgeneratorTM non-sewered sanitation system: Long-term field testing at an informal settlement community in eThekwini municipality, South Africa. Journal of Environmental Management, 296, 112921. https://doi.org/10.1016/j.jenvman.2021.112921
-
-Castro, C. J., Shyu, H. Y., Xaba, L., Bair, R., & Yeh, D. H. (2021). Performance and onsite regeneration of natural zeolite for ammonium removal in a field-scale non-sewered sanitation system. Science of The Total Environment, 776, 145938. https://doi.org/10.1016/j.scitotenv.2021.145938
