@@ -106,7 +106,7 @@ CalibParms <- c(
   Zmass = 175, # Zeolite mass in one bed (kg)
   GDens = 1, # GAC density (kg/L)
   Gmass = 80, # GAC mass in one bed (kg)
-  ZNCapa = 20.3, #18.95,
+  ZNCapa = 20.5, #18.95,
   ZabsorbKL = 0.0007
 )
 
