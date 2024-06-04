@@ -29,6 +29,7 @@ COD.data <- read.csv(file = "G:/My Drive/R project/GitHub/Dynamic_Model/Data/COD
 NCS.C.eff <- ggplot(COD.data,aes(COD.out.M,COD.out)) + geom_point(size=1)+
   geom_smooth(method = "lm", se=FALSE, color="red", linetype = "dashed", formula = y ~ x)+
   stat_poly_eq(use_label(c("R2")),rr.digits = 3) +
+  annotate("text", x = -8, y = 295, label = "qm = 83 g/kg\nKL = 0.041 L/mg\nkc = 0.0038 g/kg·min", hjust = 0) +
   labs(x = "Model-Calibrated (mg COD/L)", y = "Actual (mg COD/L)")+
   theme_bw()+theme(legend.position = "bottom",legend.title = element_blank())
 NCS.C.eff

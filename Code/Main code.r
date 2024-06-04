@@ -133,7 +133,7 @@ NCSeffm<- melt(NCSeff,id.vars="time")
 NCSB.N.eff2 <- ggplot(NCSeff,aes(`Model(Calibrated)`,Actual)) + geom_point(size=1)+
   geom_smooth(method = "lm", se=FALSE, color="red", linetype = "dashed", formula = y ~ x)+
   stat_poly_eq(use_label(c("R2")),rr.digits = 3) +
-  annotate("text", x = 2, y = 250, label = "qm = 22.5 g/kg\nKL = 0.0164 L/mg\nkc = 0.0007 g/kg·min", hjust = 0) +
+  annotate("text", x = 2, y = 230, label = "qm = 22.5 g/kg\nKL = 0.0164 L/mg\nkc = 0.0007 g/kg·min", hjust = 0) +
   labs(x = "Model-Calibrated (mg N/L)", y = "Actual (mg N/L)")+
   theme_bw()+theme(legend.position = "bottom",legend.title = element_blank())
 NCSB.N.eff2
