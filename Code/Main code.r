@@ -133,6 +133,7 @@ NCSeffm<- melt(NCSeff,id.vars="time")
 NCSB.N.eff2 <- ggplot(NCSeff,aes(`Model(Calibrated)`,Actual)) + geom_point(size=1)+
   geom_smooth(method = "lm", se=FALSE, color="red", linetype = "dashed", formula = y ~ x)+
   stat_poly_eq(use_label(c("R2")),rr.digits = 3) +
+  annotate("text", x = 2, y = 250, label = "qm = 22.5 g/kg\nKL = 0.0164 L/mg\nkc = 0.0007 g/kg·min", hjust = 0) +
   labs(x = "Model-Calibrated (mg N/L)", y = "Actual (mg N/L)")+
   theme_bw()+theme(legend.position = "bottom",legend.title = element_blank())
 NCSB.N.eff2
@@ -140,7 +141,7 @@ ggsave("G:/My Drive/R project/GitHub/Dynamic_Model/Figure/Dynamic model-TNeff2.j
 
 NCSB.N.eff <- ggplot(subset(NCSeffm[NCSeffm$variable %in% c("Model(Calibrated)","Actual"),]),
                      aes(time/(60*24),value, color = variable)) + geom_point(size=1)+
-  scale_x_continuous(breaks = seq(0, 400, by = 50), name = "time (d)") + labs(y = "NCS Eff (mg/L)")+
+  scale_x_continuous(breaks = seq(0, 400, by = 50), name = "time (d)") + labs(y = "Post-NCS (NH4-N mg/L)")+
   scale_color_manual(values=c("Model" = '#ade600',"Model(Calibrated)" = '#e69200',"Actual" = '#999999')) + 
   theme_bw()+theme(legend.key = element_rect(colour = "transparent", fill = "white"),
                    legend.background = element_rect(fill='transparent'),
